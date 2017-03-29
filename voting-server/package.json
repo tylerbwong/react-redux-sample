@@ -1,0 +1,38 @@
+{
+    "name": "voting-server",
+    "version": "1.0.0",
+    "description": "For learning",
+    "repository": "https://github.com/tylerbwong/voting-server",
+    "main": "index.js",
+    "scripts": {
+        "start": "babel-node index.js",
+        "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive",
+        "test:watch": "npm run test -- --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "babel-cli": "^6.24.0",
+        "babel-core": "^6.24.0",
+        "babel-preset-es2015": "^6.24.0",
+        "chai": "^3.5.0",
+        "chai-immutable": "^1.6.0",
+        "eslint": "^3.18.0",
+        "eslint-config-airbnb": "^14.1.0",
+        "eslint-plugin-import": "^2.2.0",
+        "eslint-plugin-jsx-a11y": "^4.0.0",
+        "eslint-plugin-react": "^6.10.3",
+        "mocha": "^3.2.0"
+    },
+    "babel": {
+        "presets": [
+            "es2015"
+        ]
+    },
+    "dependencies": {
+        "immutable": "^3.8.1",
+        "redux": "^3.6.0",
+        "socket.io": "^1.7.3"
+    }
+}
